@@ -179,7 +179,7 @@ if args.prod_mode:
         # sync_tensorboard=True,
         config=vars(args), name=experiment_name, monitor_gym=True, save_code=True)
     wandb.tensorboard.patch(save=False)
-    writer = SummaryWriter(f"/tmp/{experiment_name}")
+    writer = SummaryWriter(f"runs/{experiment_name}")
     CHECKPOINT_FREQUENCY = 50
 
 # TRY NOT TO MODIFY: seeding
@@ -324,7 +324,7 @@ for update in range(starting_update, num_updates+1):
 
     # TRY NOT TO MODIFY: prepare the execution of the game.
     for step in range(0, args.num_steps):
-        envs.render()
+        #envs.render()
         global_step += 1 * args.num_envs
         obs[step] = next_obs
         dones[step] = next_done
