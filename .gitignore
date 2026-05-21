@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Experiment outputs
+results/
+plots/
+runs/
+videos/
+
+# WandB
+wandb/
+
+# TensorBoard
+events.out.tfevents.*
+
+# VSCode
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary repositories
+temp_repo/
+
+# Models/checkpoints
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+
+# Logs
+logs/
+*.log
+
+cleanrl/
