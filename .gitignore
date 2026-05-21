@@ -44,3 +44,5 @@ logs/
 *.log
 
 cleanrl/
+
+gym-microrts-paper/
